@@ -11,7 +11,7 @@ import { ThemeProvider } from '../components/ThemeProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: process.env.SITE_NAME || 'MoonTV',
+  title: process.env.SITE_NAME || 'XTV',
   description: '影视聚合',
   manifest: '/manifest.json',
 };
@@ -29,7 +29,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const siteName = process.env.SITE_NAME || 'MoonTV';
+  const siteName = process.env.SITE_NAME || 'XTV';
   const announcement =
     process.env.ANNOUNCEMENT ||
     '本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。';
